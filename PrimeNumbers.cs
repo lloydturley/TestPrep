@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace TestPrep
 {
-    public class PrimeNumbers
+    public class PrimeNumbers : IPrimeNumbers
     {
         public string Calculate(int max)
         {
             string results = "";
             int x = 2;
-            
+
             //Console.WriteLine($"Prime Number Evaluation. Will print all the prime numbers between {x} and {max}");
 
             while (x < max + 1)

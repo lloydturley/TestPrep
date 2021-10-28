@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace TestPrep
 {
-    public class Palindrome
+    public class Palindrome : IPalindrome
     {
         public string Calculate(string input)
         {
             string results = "";
-            
+
             //Console.WriteLine("Palindrome Evaluation");
             if (input == new string(input.ToCharArray().Reverse().ToArray()))
             {

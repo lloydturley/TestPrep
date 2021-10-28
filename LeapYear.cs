@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TestPrep
 {
-    public class LeapYear
+    public class LeapYear : ILeapYear
     {
         public string Calculate(int input)
         {

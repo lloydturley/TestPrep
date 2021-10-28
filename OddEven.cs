@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TestPrep
 {
-    public class OddEven
+    public class OddEven : IOddEven
     {
         public string Calculate(int max)
         {

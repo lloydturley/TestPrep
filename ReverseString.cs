@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TestPrep
 {
-    public class ReverseString
+    public class ReverseString : IReverseString
     {
         public string Reverse(string input)
         {

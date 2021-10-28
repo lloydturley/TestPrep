@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace TestPrep
 {
-    public class StrongNumber
+    public class StrongNumber : IStrongNumber
     {
         public string Calculate(int input)
         {
             string results;
-            
+
             //Console.WriteLine("Strong Number Evaluation");
             int finalCalcd = 0;
             char[] chars = input.ToString().ToCharArray();

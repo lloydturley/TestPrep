@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TestPrep
 {
-    public class AutoMorphic
+    public class AutoMorphic : IAutoMorphic
     {
         public string Calculate(int input)
         {

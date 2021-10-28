@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TestPrep
 {
-    public class AbundantNumber
+    public class AbundantNumber : IAbundantNumber
     {
         public string Calculate(int input)
         {
@@ -40,7 +40,7 @@ namespace TestPrep
             {
                 throw;
             }
-            
+
         }
     }
 }

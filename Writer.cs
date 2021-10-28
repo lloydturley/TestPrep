@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace TestPrep
 {
-    public class Writer
+    public class Writer : IWriter
     {
         public readonly static string nL = Environment.NewLine;
 
@@ -19,10 +19,10 @@ namespace TestPrep
             }
             catch (Exception ex)
             {
-                throw(ex);
+                throw (ex);
             }
         }
     }
 
-    
+
 }
