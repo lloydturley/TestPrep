@@ -21,6 +21,7 @@ namespace TestPrep
             OddEven oE = new OddEven();
             StrongNumber strongNum = new StrongNumber();
             Palindrome pal = new Palindrome();
+            ReverseString reverse = new ReverseString();
 
             Console.WriteLine("Welcome to Test Prep");
             Console.WriteLine($"Results will be written to {file.Replace("/", "\\")}");
@@ -28,8 +29,9 @@ namespace TestPrep
             while (true)
             {
                 Console.WriteLine("Please enter a value");
+
                 string input = Console.ReadLine();
-                var typedArgs = input.Split(' ');
+                var typedArgs = input.Trim().Split(' ');
 
                 foreach (var item in typedArgs)
                 {
@@ -51,8 +53,11 @@ namespace TestPrep
                     }
                     else if (item.Length != 0)
                     {
+                        //item.All(Char.IsLetter())
                         _writer.Write(file, "Palindrome Evaluation");
                         _writer.Write(file, pal.Calculate(item));
+                        _writer.Write(file, "Reverse String");
+                        _writer.Write(file, reverse.Reverse(item).ToString());
                         Console.WriteLine("Process is complete!");
                     }
                     else
