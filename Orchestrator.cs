@@ -37,6 +37,7 @@ namespace TestPrep
             _leap = leapYear;
             _oddEven = oddEven;
             _palindrome = palindrome;
+            _prime = primeNumbers;
             _remove = removeSpecialCharacters;
             _reverse = reverseString;
             _strong = strongNumber;
