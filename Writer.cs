@@ -17,9 +17,9 @@ namespace TestPrep
             {
                 File.AppendAllText(outFile, results + nL);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw (ex);
+                throw;
             }
         }
     }

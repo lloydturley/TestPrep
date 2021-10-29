@@ -79,7 +79,7 @@ namespace TestPrep
                             _writer.Write(file, _strong.Calculate(intInput));
                             Console.WriteLine("Process is complete!");
                         }
-                        else if (item.Length != 0)
+                        else if (!string.IsNullOrWhiteSpace(item))
                         {
                             //item.All(Char.IsLetter())
                             _writer.Write(file, "Palindrome Evaluation");
@@ -104,7 +104,4 @@ namespace TestPrep
             }
         }
     }
-    
-    
-
 }
